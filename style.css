@@ -27,14 +27,16 @@ body
 {
     color: #ffffff !important;
     font-weight: 500;
+    float: right;
+    text-align: left;
 }
 .navbar-brand
 {
     color: #ffffff !important;
     font-weight: 600;
 }
-.fa-bars
+.bi-list
 {
-    color: "fff";
+    color: #fff;
     font-size: 30px !important;
 }
