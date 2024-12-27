@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #06ac8883, #0da177);
+    padding: 0 !important;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+
+}
+.navbar-nav li a
+{
+    color: #ffffff !important;
+    font-weight: 500;
+}
+.navbar-brand
+{
+    color: #ffffff !important;
+    font-weight: 600;
+}
+.fa-bars
+{
+    color: "fff";
+    font-size: 30px !important;
+}
