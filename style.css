@@ -6,6 +6,8 @@
 body
 {
     font-family: sans-serif;
+    /* background-image: linear-gradient(to right, #06ac8883, #0da177); */
+    color: #fff;
 }
 #nav-bar
 {
@@ -46,17 +48,38 @@ body
 }
 
 /*-- banner section --*/
-
-#banner
+ #banner
 {
-    background-image: linear-gradient(to right, #06ac8883, #0da177);
     color: #fff;
-    padding-top: 5%;
+    background-image: linear-gradient(to right, #06ac8883, #0da177);
 }
 .promo-title
 {
     font-size: 40px;
     font-weight: 600;
     margin-top: 100px;
-    
+}
+.bottom-img
+{
+    width: 100%;
+}
+
+/*-- footer section --*/
+#footer
+{
+    color: #fff;
+    background-image: linear-gradient(to right, #06ac8883, #0da177);
+}
+.footer-img
+{
+    width: 100%;
+}
+.footer-box
+{
+    padding: 20px;
+}
+.footer-box img
+{
+    width: 120px;
+    margin-bottom: 20px;
 }
