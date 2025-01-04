@@ -102,8 +102,8 @@ body
 }
 .contact-section
 {
-        display: grid;
-        align-items: center;
+    display: grid;
+    align-items: center;
 }
 .footer-box .form-control
 {
@@ -115,9 +115,9 @@ body
 }
 .footer-box .btn-primary
 {
-box-shadow: none !important;
-border: none;
-border-radius: 0;
-margin-top: 30px;
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
 }
 
