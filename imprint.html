@@ -19,24 +19,24 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="footprint.js"></script>
+    <script src="Footprint.js"></script>
   </head>
   <body>
     <!-- Nav Section -->
     <section id="nav-bar"> 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">CO² Footprint</a>
+          <a class="navbar-brand" href="index.html">CO² Footprint</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav" aria-controls="navBarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-list"></i>
           </button>
           <div class="collapse navbar-collapse" id="navBarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">CO² EMISSIONS</a>
+                <a class="nav-link" href="index.html">CO² EMISSIONS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                <a class="nav-link" href="#">ABOUT US</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT</a>
@@ -62,105 +62,40 @@
       <img src="images/wave1.png" class="bottom-img">
     </section>
     <!-- Statistics section -->
-     <section>
-      <div class="container table-responsive">
+     <section id="content">
+      <div class="container">
         <div class="row">
-          <div class="mx-auto">
-            <h4>Overview of Global CO² Emissions 2024</h4>
-            <input class="form-control" id="myInput" type="text" placeholder="Search..">
-            <br>
-            <table id="globalEmissions" class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Flag</th>
-                  <th onclick="sortTable(1)">Country</th>
-                  <th onclick="sortTable(2)">Company</th>
-                  <th onclick="sortTableEmissions(3)">Emissions in Tons/Year</th>
-                </tr>
-              </thead>
-              <tbody id="myTable">
-                <tr>
-                  <td>
-                    <img src="images/germany.png" class="img-fluid">
-                  </td>
-                  <td>Germany</td>
-                  <td>QuantumCore</td>
-                  <td>458,3</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/norway.png" class="img-fluid">
-                  </td>
-                  <td>Norway</td>
-                  <td>CircuitHive</td>
-                  <td>402,6</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/spain.png" class="img-fluid">
-                  </td>
-                  <td>Spain</td>
-                  <td>FusionForge</td>
-                  <td>387,1</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/austria.png" class="img-fluid">
-                  </td>
-                  <td>Austria</td>
-                  <td>The Waffle Company</td>
-                  <td>352,4</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/belgium.png" class="img-fluid">
-                  </td>
-                  <td>Belgium</td>
-                  <td>Communicative Industries</td>
-                  <td>234,8</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/norway.png" class="img-fluid">
-                  </td>
-                  <td>Norway</td>
-                  <td>HyperLink Solutions</td>
-                  <td>196,8</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/germany.png" class="img-fluid">
-                  </td>
-                  <td>Germany</td>
-                  <td>General Automotive</td>
-                  <td>163,4</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/greece.png" class="img-fluid">
-                  </td>
-                  <td>Greece</td>
-                  <td>Echo Apparel</td>
-                  <td>132,6</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/india.png" class="img-fluid">
-                  </td>
-                  <td>India</td>
-                  <td>Cove Couture</td>
-                  <td>80,4</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="images/greece.png" class="img-fluid">
-                  </td>
-                  <td>Greece</td>
-                  <td>CodePulse</td>
-                  <td>57,9</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="mx-auto ">
+            <h class="h3 about-li">CO² Footprint</h>
+            <p class="block"> 
+                Nonprofit Organization for Climate Transparency<br>
+                Organization Address:<br>
+                Industriestraße 3<br>
+                12345 Munich<br>
+                Germany</p>
+            <h class="h3 about-li">Represented by:</h>
+            <p class="block">
+                Chairperson: Max Mustermann<br>
+                Deputy Chairperson: Maria Musterfrau</p>
+            <h class="h3 about-li">Contact:</h>
+            <p class="block">
+                Phone: +49 (0)123 456 7890<br>
+                Email: info@climatetransparency.org<br>
+                Website: www.climatetransparency.org
+            </p>
+            <h class="h3 about-li">Register Information:</h>
+            <p class="block">Registered in the Association Register.<br>
+                Registry Court: Sample City District Court<br>
+                Registration Number: VR 12345</p>
+            <h class="h3 about-li">Tax Information:</h>
+            <p class="block">Tax ID: 12/345/67890<br>
+                Recognized as a nonprofit organization by the Sample City Tax Office.</p>
+            <h class="h3 about-li">Disclaimer:</h>
+            <p class="block">
+                The contents of this website were created with the utmost care.<br>
+                However, we cannot guarantee the accuracy, completeness, or timeliness of the content.<br>
+                As a service provider, we are responsible for our own content on these pages in accordance with § 7 Abs.1 TMG and general laws.
+            </p>
           </div>
         </div>
       </div>
@@ -176,7 +111,7 @@
                     Every step to protect nature and reduce waste leads us closer to a cleaner world for future generations."</p>
                     <ul class="nav-footer">
                       <li>
-                        <a href="imprint.html" class="nav-link h3">Impressum</a>
+                        <a href="#" class="nav-link h3">Impressum</a>
                       </li>
                       <li>
                         <a href="#" class="nav-link h3">Datenschutzrichtlinie</a>
