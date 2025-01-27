@@ -2,9 +2,15 @@
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
+
+    const validInput = /^[a-zA-Z0-9\x08\x0A\x0D]*$/; // Nur alphanumerische Zeichen erlauben
+    if (!validInput.test(value)) {
+      alert("Ungültige Eingabe!");
+    } else {
+      $("#myTable tr").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
+   }
   });
 });
 
