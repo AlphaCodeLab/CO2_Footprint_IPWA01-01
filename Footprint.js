@@ -105,3 +105,16 @@ function sortTableEmissions(n) {
     }
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const isRTL = document.documentElement.dir === "rtl";
+  const sidebar = document.querySelector("#offcanvasDarkNavbar");
+
+  if (isRTL) {
+    sidebar.classList.remove("offcanvas-start");
+    sidebar.classList.add("offcanvas-end");
+} else {
+    sidebar.classList.remove("offcanvas-end");
+    sidebar.classList.add("offcanvas-start");
+}
+});
