@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
 
-    const validInput = /^[a-zA-Z0-9\x08\x0A\x0D]*$/; // Nur alphanumerische Zeichen erlauben
+    const validInput = /^[a-zA-Z0-9\x08\x0A\x0D]*$/; // Allow only alphanumeric characters
     if (!validInput.test(value)) {
       alert("Ungültige Eingabe!");
     } else {
@@ -106,6 +106,7 @@ function sortTable(n) {
 //   }
 // }
 
+// Arranging the menu
 document.addEventListener("DOMContentLoaded", function () {
   const isRTL = document.documentElement.dir === "rtl";
   const sidebar = document.querySelector("#offcanvasDarkNavbar");
